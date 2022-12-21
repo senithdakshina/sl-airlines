@@ -1,0 +1,298 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:ital,wght@0,100;0,700;0,900;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<section>
+		<div class="headder">
+			
+			<div class="navibar">
+				<img src="SriLankan_Airlines_logo_logotype.png" class="logoimg">
+					<ul>
+						
+						<li><a href="">About Us</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Location</a></li>
+				
+					</ul>
+			</div>
+			
+			<div class="content">
+			
+				<h3 >WELCOME TO</h3>
+				<h1 >SriLankan Airlines</h1>
+				<p class="explain">
+					Described as ‘The Original Paradise’, 
+					Sri Lanka is one of the largest islands in the Indian Ocean. Experience the miles of palm-shaded sandy beaches, warm seas, 
+					colourful coral reefs and calm lagoons. The smooth blend of history, culture, countryside and The Maldives has always and will always
+					 remain a unique destination for the fun loving tourist seeking an exotic holiday. Over a 1000 tiny islands are grouped into natural atolls that are protected by surrounding coral reefs.
+					 The islands are of pure white.
+					 
+				
+				</p>
+			</div>
+				<div class="but">
+					<button type="button" class="col" >Find out More</button>
+					<button type="button" class="col" >Subscribe</button>
+				
+				
+				
+				</div>
+			
+			
+			
+			
+
+		
+		</div>
+	</section>
+
+	
+	<section class="detaials">
+		<div class="textbox">
+			<h1>OUR SERVISES</h1>
+			<p>FIND BEST OFFERS WITH SRILANKAN HOLIDAYS</p>
+		</div>
+			<div class="box1">
+				<div class="box">
+					<h3 class="boxtop">Cheak-in Online</h3>
+					<p class="para">Discover a range of package deals with SriLankan Airlines including hotel offers
+					Special rates for charter flights,yachts and exclusive spas</P>
+					<button type="button" class="more">More</button>
+			
+				
+				</div>
+				<div class="box2">
+					<h3 class="boxtop">BUSINESS CLASS</h3>
+					<P class="para">There’s no better way to fly than SriLankan’s Business Class. <br>It’s an experience of comfort and sophistication.</p>
+					<button type="button" class="more">More</button>
+				</div>
+				<div class="box3">
+					<h3 class="boxtop">ECONOMY CLASS</h3>
+					<p class="para">SriLankan Airlines Economy class is where intricacy meets simplicity the perfect combination for an enjoyable flying experience.</p>
+					<button type="button" class="more">More</button>
+				</div>
+			</div>
+		
+	</section>
+	
+	
+		<div class="moredetail">
+			<h1>Enhance your SriLankan Experience</h1>
+			<p>Get away from the hustle, bustle and the extended rush hours to discover your own paradise</p>
+		</div>
+
+	
+	
+	<section class="page3">
+		<div class="img-slider">
+		  <div class="slide active">
+			<img src="9.jpg" alt="">
+			<div class="info">
+			  <h2>Sri Lanka Railways</h2>
+			  <p>The train trip from Ella to Kandy in Sri Lanka, or the other way around, is considered to be one of the most beautiful train trips in the world.</p>
+			</div>
+		  </div>
+		  <div class="slide">
+			<img src="7.jpg" alt="">
+			<div class="info">
+			  <h2>Wildlife</h2>
+			  <p>With over 120 species of mammals, 171 species of reptiles, 106 species of amphibians, 227 species of birds, and one of the world's largest populations of blue whales and sperm whales, Sri Lanka is truly an animal-lover's dream come true..</p>
+			</div>
+		  </div>
+		  <div class="slide">
+			<img src="3.jpg" alt="">
+			<div class="info">
+			  <h2>Sigiriya</h2>
+			  <p>Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of rock approximately 180 m high</p>
+			</div>
+		  </div>
+		  <div class="slide">
+			<img src="4.jpg" alt="">
+			<div class="info">
+			  <h2>Beaches</h2>
+			  <p> That is exactly what Sri Lanka is famous for. People from all around the world come to explore the best beaches in Sri Lanka. The scenic views of these gorgeous sandy shores are sure to make you want to revisit these beautiful beaches in and around Sri Lanka.</p>
+			</div>
+		  </div>
+		  <div class="slide">
+			<img src="5.jpg" alt="">
+			<div class="info">
+			  <h2>Hotels</h2>
+			  <p>The island is generally blessed with impressive hotels usually situated in stunning settings. The coastal areas, especially the west and south, have innumerable resort hotels, where package tourists mostly stay.<p>
+			</div>
+		  </div>
+		  <div class="navigation">
+			<div class="btn active"></div>
+			<div class="btn"></div>
+			<div class="btn"></div>
+			<div class="btn"></div>
+			<div class="btn"></div>
+		  </div>
+		</div>
+	</section>
+		
+		
+
+		<script type="text/javascript">
+			var slides = document.querySelectorAll('.slide');
+			var btns = document.querySelectorAll('.btn');
+			let currentSlide = 1;
+
+			// Javascript for image slider manual navigation
+			var manualNav = function(manual){
+			  slides.forEach((slide) => {
+				slide.classList.remove('active');
+
+				btns.forEach((btn) => {
+				  btn.classList.remove('active');
+				});
+			  });
+
+			  slides[manual].classList.add('active');
+			  btns[manual].classList.add('active');
+			}
+
+			btns.forEach((btn, i) => {
+			  btn.addEventListener("click", () => {
+				manualNav(i);
+				currentSlide = i;
+			  });
+			});
+
+			// Javascript for image slider autoplay navigation
+			var repeat = function(activeClass){
+			  let active = document.getElementsByClassName('active');
+			  let i = 1;
+
+			  var repeater = () => {
+				setTimeout(function(){
+				  [...active].forEach((activeSlide) => {
+					activeSlide.classList.remove('active');
+				  });
+
+				slides[i].classList.add('active');
+				btns[i].classList.add('active');
+				i++;
+
+				if(slides.length == i){
+				  i = 0;
+				}
+				if(i >= slides.length){
+				  return;
+				}
+				repeater();
+			  }, 10000);
+			  }
+			  repeater();
+			}
+			repeat();
+		</script>
+
+	
+	
+	<section class="test">
+        <h1>Reviews</h1>
+        <p>The country's flag carrier, SriLankan Airlines (UL) operates from a hub at Bandaranaike International Airport (CMB). A member of the Oneworld alliance, the airline was founded in 1978 as Air Lanka.</p>
+        <div class="row">
+            <div class="test-col">
+                <img src="dr.jfif">
+                <div>
+					<h3>Dr. Dharshana Weerakoon</h3>
+                    <P> The service on my flight was excellent, I did fill in a review on the flight about a couple of the flight attendants, but realised everyone of the attendants worked very hard.
+					Sri Lankan airlines must pick the best people available </P>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star-o" ></i>
+                </div>
+            </div>
+            <div class="test-col">
+                <img src="user1.jpg">
+                <div>
+					 <h3>Meli Fernando</h3>
+                    <P> Traveling with my 77th year old mother in law with wheel chair.From ground staff to cabin crew doing a good job helping my mother in law Traveling experience with sri lankan airlines</P>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star" ></i>
+					<i class="fa fa-star-o" ></i>
+					
+                 
+                </div>
+            </div>
+            
+        </div>
+
+
+
+    </section>
+	<section class="page5">
+		 <footer class="footer">
+		 <div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>About US</h4>
+					<ul>
+						<li><a href="#">Sri Lanka Tourism</a></li>
+						<li><a href="#">our services</a></li>
+						<li><a href="#">privacy policy</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Cargo</a></li>
+						<li><a href="#">returns</a></li>
+						<li><a href="#">24 Hours Contact Center</a></li>
+						<li><a href="#">payment options</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Services</h4>
+					<ul>
+						<li><a href="#">Cargo</a></li>
+						<li><a href="#">Training</a></li>
+						<li><a href="#">Srilankan Catering</a></li>
+						<li><a href="#">Ground Handling</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		 </div>
+		 
+		</footer>	
+			<div class="cpysection">
+		 
+			<p>copyright &copy;2022 Design by uwu/cst/021/087 <span>senith</span></p>
+		 
+		 </div>
+	  
+  </section>
+
+		 
+
+	
+</body>
+
+
+
+
+
+</html>
